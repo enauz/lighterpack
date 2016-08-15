@@ -214,7 +214,7 @@ app.get("/csv/:id", function(req, res) {
   });
 });
 
-app.post("/register", function(req, res) {
+app.post("register", function(req, res) {
 
   var username = req.body.username;
   var password = req.body.password;
