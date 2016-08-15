@@ -68,7 +68,7 @@ editLists = function() {
 
     function signin() {
         $.ajax({
-            url: "/signin",
+            url: "signin",
             method: "POST",
             error: function(data) {
                 showSigninModal({error: data.responseText});
@@ -559,7 +559,7 @@ editLists = function() {
 
             $.ajax({
                 data: formData,
-                url: "/imageUpload",
+                url: "imageUpload",
                 method: "POST",
                 xhr: function() {  // custom xhr
                     myXhr = $.ajaxSettings.xhr();
@@ -703,7 +703,7 @@ editLists = function() {
             $(".password", this).val("");
 
             $.ajax({
-                url: "/account",
+                url: "account",
                 data: data,
                 method: "POST",
                 error: function(data, textStatus, jqXHR) {
@@ -1220,7 +1220,7 @@ editLists = function() {
             username = username.toLowerCase();
 
             $.ajax({
-                url: "/forgotPassword",
+                url: "forgotPassword",
                 data: {username: username},
                 method: "POST",
                 error: function(data, textStatus, jqXHR) {
@@ -1252,7 +1252,7 @@ editLists = function() {
             email = email.toLowerCase();
 
             $.ajax({
-                url: "/forgotUsername",
+                url: "forgotUsername",
                 data: {email: email},
                 method: "POST",
                 error: function(data, textStatus, jqXHR) {
@@ -1362,7 +1362,7 @@ editLists = function() {
 
     function getExternalId(list) {
         $.ajax({
-            url: "/externalId",
+            url: "externalId",
             method: "POST",
             success: function(data) {
                 list.externalId = $.trim(data);
