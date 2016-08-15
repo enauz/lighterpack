@@ -1066,7 +1066,7 @@ editLists = function() {
                     saveTimeout = null;
                 }
                 lastSave = temp.getTime();
-                $.ajax({ url:"/saveLibrary",
+                $.ajax({ url:"saveLibrary",
                     method: "POST",
                     data: {data: librarySave},
                     error: function(data, textStatus, jqXHR) {
