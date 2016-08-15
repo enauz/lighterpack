@@ -30,7 +30,7 @@ eval(fs.readFileSync(rootPath+'public/sha3.js')+'');
 eval(fs.readFileSync(rootPath+'public/pies.js')+'');
 eval(fs.readFileSync(rootPath+'public/dataTypes.js')+'');
 
-app.use(express.static(__dirname + '/public', { maxAge: oneDay }));
+app.use(express.static(__dirname + '/public/', { maxAge: oneDay }));
 
 app.use(cookieParser());
 app.use(bodyParser.json({limit: '50mb'}));
@@ -45,7 +45,7 @@ var templates = {},
     embedTemplate,
     shareTemplate;
 
-app.get('/lighterpack', function(req, res) {
+app.get('/', function(req, res) {
   awesomeLog(req);
   res.send(indexTemplate);
 });
