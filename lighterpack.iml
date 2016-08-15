@@ -5,5 +5,8 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="lighterpack node_modules" level="project" />
+    <orderEntry type="library" name="pies" level="application" />
+    <orderEntry type="library" name="dataTypes" level="application" />
+    <orderEntry type="library" name="share" level="application" />
   </component>
 </module>
