@@ -1376,7 +1376,7 @@ editLists = function() {
     }
 
     function showShareBox(externalId) {
-        $("#shareUrl").val("https://lighterpack.com/r/"+externalId).focus().select();
+        $("#shareUrl").val("https://biosciences.hs-mittweida.de/lighterpack/r/"+externalId).focus().select();
         $("#embedUrl").val("<script src=\"https://biosciences.hs-mittweida.de/lighterpack/e/"+externalId+"\"></script><div" +
             " id=\""+externalId+"\"></div>");
         $("#csvUrl").attr("href","csv/"+externalId);
