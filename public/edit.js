@@ -1144,7 +1144,7 @@ editLists = function() {
             hash = hash.toString(CryptoJS.enc.Base64);
 
             $.ajax({
-                url: "/register",
+                url: "register",
                 data: {username: username, password: hash, email: email, library: getSaveData() },
                 method: "POST",
                 error: function(data, textStatus, jqXHR) {
@@ -1184,7 +1184,7 @@ editLists = function() {
             hash = hash.toString(CryptoJS.enc.Base64);
 
             $.ajax({
-                url: "/signin",
+                url: "signin",
                 data: {username: username, password: hash, },
                 method: "POST",
                 error: function(data, textStatus, jqXHR) {
